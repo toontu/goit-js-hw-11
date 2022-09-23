@@ -37,7 +37,7 @@ const onSearchFormSubmit = async event => {
 
   try {
     const response = await pixabayApi.fetchImagesByQuery();
-    console.log(response.data);
+    // console.log(response.data);
 
     if (response.data.total === 0) {
       loadMoreBtn.classList.add('is-hidden');
